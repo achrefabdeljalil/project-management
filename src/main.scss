@@ -1,0 +1,13 @@
+@media screen {
+  html, body, .app {
+    height: 100%;
+    margin: 0;
+  }
+}
+
+html,
+body,
+.app {
+  background-color: $color-white;
+  font-size: $content-font-size;
+}

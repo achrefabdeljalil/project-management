@@ -1,0 +1,58 @@
+
+
+@import "@/variables";
+
+#app {
+  .title{
+    font-size: $title-font-size;
+
+    &-sm{
+      font-size: $title-font-size-sm;
+    }
+
+    &-md{
+      font-size: $title-font-size-md;
+    }
+
+    &-md{
+      font-size: $title-font-size-lg;
+    }
+  }
+
+  .text{
+    color: $color-grey-tundora;
+
+    &-sm{
+      font-size: $text-size-sm;
+    }
+
+    &-md{
+      font-size: $text-size-md;
+    }
+
+    &-lg{
+      font-size: $text-size-lg;
+    }
+  }
+  .title,.text{
+    &-primary{
+      color: $color-blue-dark;
+    }
+
+    &-secondary{
+      color: $color-grey-dusty;
+    }
+  }
+
+  .vertical-divider{
+    background: $color-grey-medium;
+    width: 1px;
+    min-height: 100%;
+  }
+
+  .horizontal-divider{
+    background: $color-grey-medium;
+    height: 1px;
+    min-width: 100%;
+  }
+}
