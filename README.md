@@ -1,6 +1,6 @@
 # Vue 3 + Typescript + Vite
 
-### Step 1 : intall dependencies
+### Step 1 : Intall dependencies
 ```
 npm install
 ```
