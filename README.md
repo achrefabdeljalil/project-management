@@ -7,5 +7,5 @@ npm install
 
 ### Step 2 : Run project
 ```
-npm install
+npm run dev
 ```
