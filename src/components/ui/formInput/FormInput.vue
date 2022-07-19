@@ -1,6 +1,8 @@
 <template>
   <div class="form-input">
-    <label> {{ label }}</label>
+    <label>
+      {{ label }} <span v-if="isRequired" class="required-mark">*</span></label
+    >
     <div v-if="type == 'text'" class="text-input">
       <input
         type="text"
@@ -43,6 +45,10 @@ export default defineComponent({
       default: "",
       type: String,
     },
+    isRequired: {
+      default: "",
+      type: Boolean,
+    },
     options: {
       type: Object,
     },
@@ -54,13 +60,17 @@ export default defineComponent({
 @import "@/variables";
 #app {
   .form-input {
-    margin-bottom: 10px;
+    margin-bottom: $new-spacing;
     display: flex;
     flex-direction: column;
 
     label {
       font-size: 15px;
-      margin: 10px 0;
+      margin: $new-spacing 0;
+    }
+
+    .required-mark {
+      color: red;
     }
     .text-input {
       display: flex;

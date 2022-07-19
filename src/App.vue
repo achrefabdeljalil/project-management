@@ -21,6 +21,7 @@
         :key="field.id"
         :type="field.type"
         :label="field.title"
+        :is-required="field.required"
         :options="formattedFieldOptions(field?.options)"
         @changed="formChanged($event, field)"
       />
